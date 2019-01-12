@@ -1,0 +1,23 @@
+{% extends "application.html" %}
+{% load static %}
+
+{% block title %} Veyeurism {% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<div class="homeDivContainer">
+    <h1 class="homePageHead">엿보기 달력</h1>
+    <h2 class="homePageDes">엿보기 달력은 불법이 아닙니다.</h2>
+    <div class="ID_PW">
+        <form action="/action_page.php">
+            <li>
+                <ul>ID</ul>
+                <input type="text" name="inputID" value="Your ID here">
+                <ul>PW</ul>
+                <input type="text" name="inputPW" value="Your PassWord here">
+                <br/>
+                <input class = "submitInput" type="submit" value="Submit">
+            </li>
+        </form>
+    </div>
+</div>
+{% endblock %}
